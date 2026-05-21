@@ -12,9 +12,9 @@ export const Features = () => {
   ];
 
   return (
-    <section id="funcionalidades" className="py-32 bg-brand-bg px-4 md:px-16 border-b-2 border-brand-surface-var">
+    <section id="funcionalidades" className="py-20 md:py-32 bg-brand-bg px-4 md:px-16 border-b-2 border-brand-surface-var">
       <div className="max-w-7xl mx-auto">
-        <h2 className="font-display text-5xl md:text-6xl text-brand-text uppercase mb-16">
+        <h2 className="font-display text-3xl sm:text-5xl md:text-6xl text-brand-text uppercase mb-12 md:mb-16 text-center md:text-left">
           Sem firula. <span className="text-brand-primary">O que importa.</span>
         </h2>
 
@@ -26,7 +26,7 @@ export const Features = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
               viewport={{ once: true }}
-              className="p-6 border-r border-b border-brand-surface-var group hover:bg-brand-surface transition-colors duration-300"
+              className="p-6 border-r border-b border-brand-surface-var group hover:bg-brand-surface transition-colors duration-300 flex flex-col items-center md:items-start text-center md:text-left"
             >
               <h3 className="font-mono text-[9px] text-brand-muted uppercase block mb-2 tracking-widest">
                 {feature.title}

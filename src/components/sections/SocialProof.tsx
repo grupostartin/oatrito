@@ -8,13 +8,13 @@ export const SocialProof = () => {
   ];
 
   return (
-    <section className="py-24 bg-[#050505] px-4 md:px-16 overflow-hidden">
+    <section className="py-20 md:py-24 bg-[#050505] px-4 md:px-16 overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <h2 className="font-display text-4xl md:text-5xl text-brand-text uppercase mb-16 text-center">
+        <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-brand-text uppercase mb-12 md:mb-16 text-center">
           +41 mil pessoas sentindo o <span className="text-brand-primary border-b-4 border-brand-primary pb-1">atrito</span> todo dia.
         </h2>
 
-        <div className="flex overflow-x-auto gap-8 pb-12 snap-x hide-scrollbar" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+        <div className="flex overflow-x-auto gap-6 md:gap-8 pb-12 snap-x hide-scrollbar" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
           {testimonials.map((t, i) => (
             <motion.div 
               key={i}
@@ -22,10 +22,10 @@ export const SocialProof = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: i * 0.2 }}
               viewport={{ once: true }}
-              className="min-w-[300px] md:min-w-[400px] bg-brand-surface border border-brand-surface-var p-8 flex-shrink-0 snap-center rounded-none relative"
+              className="min-w-[280px] xs:min-w-[320px] md:min-w-[400px] bg-brand-surface border border-brand-surface-var p-6 md:p-8 flex-shrink-0 snap-center rounded-none relative"
             >
               <div className="absolute -top-4 -left-4 text-6xl text-brand-surface-var font-display">"</div>
-              <p className="font-body text-xl text-brand-text mb-8 relative z-10 font-medium">
+              <p className="font-body text-lg md:text-xl text-brand-text mb-8 relative z-10 font-medium">
                 {t.text}
               </p>
               <div className="flex items-center gap-4">

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-[1024px] flex flex-col pt-24 overflow-hidden">
+    <section className="relative min-h-screen md:min-h-[1024px] flex flex-col pt-24 pb-12 overflow-hidden">
       {/* Decorative */}
       <div className="absolute bottom-0 left-0 w-full h-1 bg-brand-primary z-0"></div>
       
@@ -13,7 +13,7 @@ export const Hero = () => {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="font-display text-[120px] leading-[0.8] md:text-[180px] text-brand-text uppercase tracking-tighter text-center mt-12 md:mt-24"
+          className="font-display text-[54px] sm:text-[90px] md:text-[140px] lg:text-[180px] leading-[0.9] md:leading-[0.8] text-brand-text uppercase tracking-tighter text-center mt-12 md:mt-24"
         >
           O ATRITO
         </motion.h1>

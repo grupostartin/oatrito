@@ -2,8 +2,8 @@ import { Button } from "../ui/Button";
 
 export const Navbar = () => {
   return (
-    <nav className="fixed top-0 w-full z-50 flex justify-between items-center px-4 md:px-8 py-8 bg-transparent">
-      <div className="font-display text-4xl uppercase tracking-tighter text-brand-primary">
+    <nav className="fixed top-0 w-full z-50 flex justify-center md:justify-between items-center px-4 md:px-8 py-6 md:py-8 bg-transparent">
+      <div className="font-display text-3xl sm:text-4xl uppercase tracking-tighter text-brand-primary">
         ATRITO
       </div>
       <div className="hidden md:flex gap-8 items-center">

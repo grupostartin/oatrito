@@ -12,9 +12,9 @@ export const FAQ = () => {
   ];
 
   return (
-    <section className="py-32 bg-brand-bg px-4 md:px-16">
+    <section className="py-20 md:py-32 bg-brand-bg px-4 md:px-16">
       <div className="max-w-4xl mx-auto">
-        <h2 className="font-display text-4xl md:text-5xl text-brand-text uppercase mb-16 text-center">
+        <h2 className="font-display text-3xl sm:text-4xl md:text-5xl text-brand-text uppercase mb-12 md:mb-16 text-center">
           Perguntas Frequentes
         </h2>
 
@@ -38,7 +38,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border border-brand-surface-var bg-brand-surface relative overflow-hidden group ml-6">
+    <div className="border border-brand-surface-var bg-brand-surface relative overflow-hidden group ml-4 md:ml-6">
       <button 
         onClick={() => setIsOpen(!isOpen)}
         className="w-full px-6 py-6 flex justify-between items-center text-left hover:bg-brand-surface-high transition-colors"
