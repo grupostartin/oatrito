@@ -15,6 +15,7 @@ import { Pricing } from "./components/sections/Pricing";
 import { FAQ } from "./components/sections/FAQ";
 import { CTASection } from "./components/sections/CTASection";
 import { Footer } from "./components/layout/Footer";
+import { WhatsAppButton } from "./components/layout/WhatsAppButton";
 
 export default function App() {
   return (
@@ -36,6 +37,7 @@ export default function App() {
       </main>
 
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }
